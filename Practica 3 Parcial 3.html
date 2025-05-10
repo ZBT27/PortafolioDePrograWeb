@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Eres un poser de The Smiths?</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>¿Eres un poser de The Smiths?</h1>
+    <form id="quizForm">
+      <!-- Pregunta 1 -->
+      <div class="question">
+        <label>1. ¿Cuál fue el primer álbum de estudio de The Smiths?</label><br>
+        <input type="radio" name="q1" value="1"> The Smiths<br>
+        <input type="radio" name="q1" value="0"> Meat Is Murder<br>
+        <input type="radio" name="q1" value="0"> Hatful of Hollow<br>
+      </div>
+
+      <!-- Pregunta 2 -->
+      <div class="question">
+        <label>2. ¿Qué álbum incluye “There Is a Light That Never Goes Out”?</label><br>
+        <input type="radio" name="q2" value="1"> The Queen Is Dead<br>
+        <input type="radio" name="q2" value="0"> Louder Than Bombs<br>
+        <input type="radio" name="q2" value="0"> Strangeways, Here We Come<br>
+      </div>
+
+      <!-- Pregunta 3 -->
+      <div class="question">
+        <label>3. ¿Qué álbum contiene “The Headmaster Ritual”?</label><br>
+        <input type="radio" name="q3" value="1"> Meat Is Murder<br>
+        <input type="radio" name="q3" value="0"> The Smiths<br>
+        <input type="radio" name="q3" value="0"> Strangeways, Here We Come<br>
+      </div>
+
+      <!-- Pregunta 4 -->
+      <div class="question">
+        <label>4. ¿Qué álbum fue lanzado tras la ruptura de la banda?</label><br>
+        <input type="radio" name="q4" value="1"> Strangeways, Here We Come<br>
+        <input type="radio" name="q4" value="0"> The Queen Is Dead<br>
+        <input type="radio" name="q4" value="0"> Rank<br>
+      </div>
+
+      <!-- Pregunta 5 -->
+      <div class="question">
+        <label>5. ¿Qué álbum es en vivo?</label><br>
+        <input type="radio" name="q5" value="1"> Rank<br>
+        <input type="radio" name="q5" value="0"> The Queen Is Dead<br>
+        <input type="radio" name="q5" value="0"> Meat Is Murder<br>
+      </div>
+
+      <!-- Pregunta 6 -->
+      <div class="question">
+        <label>6. ¿Qué álbum tiene una portada con Alain Delon?</label><br>
+        <input type="radio" name="q6" value="1"> The Queen Is Dead<br>
+        <input type="radio" name="q6" value="0"> Louder Than Bombs<br>
+        <input type="radio" name="q6" value="0"> Hatful of Hollow<br>
+      </div>
+
+      <!-- Pregunta 7 -->
+      <div class="question">
+        <label>7. ¿Qué álbum contiene “Please Please Please Let Me Get What I Want”?</label><br>
+        <input type="radio" name="q7" value="1"> Hatful of Hollow<br>
+        <input type="radio" name="q7" value="0"> The Smiths<br>
+        <input type="radio" name="q7" value="0"> Meat Is Murder<br>
+      </div>
+
+      <!-- Pregunta 8 -->
+      <div class="question">
+        <label>8. ¿Cuál NO es un álbum de estudio oficial?</label><br>
+        <input type="radio" name="q8" value="1"> Hatful of Hollow<br>
+        <input type="radio" name="q8" value="0"> Meat Is Murder<br>
+        <input type="radio" name="q8" value="0"> Strangeways, Here We Come<br>
+      </div>
+
+      <!-- Pregunta 9 -->
+      <div class="question">
+        <label>9. ¿Qué álbum incluye la canción “Asleep”?</label><br>
+        <input type="radio" name="q9" value="1"> The World Won’t Listen<br>
+        <input type="radio" name="q9" value="0"> The Smiths<br>
+        <input type="radio" name="q9" value="0"> Meat Is Murder<br>
+      </div>
+
+      <!-- Pregunta 10 -->
+      <div class="question">
+        <label>10. ¿Qué álbum tiene la portada azul con el retrato de un joven?</label><br>
+        <input type="radio" name="q10" value="1"> Hatful of Hollow<br>
+        <input type="radio" name="q10" value="0"> Louder Than Bombs<br>
+        <input type="radio" name="q10" value="0"> Rank<br>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="result"></div>
+    <canvas id="chart" width="400" height="200"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
