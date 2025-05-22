@@ -25,6 +25,8 @@ p{
 
 img{
 	border-radius: 25px;
+        width: 200px;
+        height: 100px;
 }
 
 iframe{
