@@ -82,3 +82,11 @@ p{
 .producto:hover .info-hover {
   opacity: 1;
 }
+.centrado {
+      text-align: center;
+    }
+
+    .galeria img,
+    .galeria video {
+      margin: 10px;
+    }
