@@ -1,0 +1,121 @@
+body{
+	background-color: #a29abb;
+	font-family: montserrat;
+}
+
+td{
+	padding: 15px;
+}
+
+h1{
+	color: white;
+}
+
+@font-face{
+	font-family: "fuente1";
+	src: url("Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+p{
+	font-family: "fuente1";
+	font-size: 15px;
+	text-align: left;
+	padding: 15px;
+	margin: 10px;
+}
+
+img{
+	border-radius: 25px;
+      
+}
+
+iframe{
+	height: 600px;
+	width: 600px;
+	border-radius: 25px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+        
+.navbar a{ 
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.footer{
+    padding: 20px;
+    margin-top: 25px;
+  	background: rgba(0, 0, 0, 0.3);
+}
+        
+.footer a{
+ 	color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+#comments {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 40px;
+    color: white;
+    font-family: "fuente1";
+}
+
+#comments h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#commentInput {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: "fuente1";
+    font-size: 14px;
+    resize: none;
+    background-color: #e6e6fa;
+}
+
+#addCommentBtn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4b0082;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "fuente1";
+}
+
+#addCommentBtn:hover {
+    background-color: #6a0dad;
+}
+
+#comment-list {
+    margin-top: 20px;
+}
+
+.comment {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: #2c2c2c; /* Cambiado de blanco a gris oscuro */
+    font-family: "fuente1";
+}
+
+
