@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Video TikTok embebido</title>
+  <style>
+    /* Centrar y limitar ancho para que se vea bien en móviles y escritorio */
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin: 20px; display:flex; justify-content:center; }
+    .wrap { max-width:720px; width:100%; }
+    .fallback { margin-top: 12px; font-size: 0.95rem; color:#444; }
+    iframe.tiktok-iframe { width:100%; height:720px; border:0; min-height:300px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h2>Embebiendo TikTok</h2>
+
+    <!-- Método 1: embed oficial de TikTok (recomendado) -->
+    <!-- Usamos tu enlace corto en el atributo cite; embed.js suele resolverlo -->
+    <blockquote class="tiktok-embed" cite="https://vt.tiktok.com/ZSfo8kkHg/" data-unique-id="" style="max-width:605px;min-width:325px;">
+      <section>
+        <a target="_blank" title="Ver en TikTok" href="https://vt.tiktok.com/ZSfo8kkHg/">Ver en TikTok</a>
+      </section>
+    </blockquote>
+
+    <!-- Script oficial de TikTok que transforma el blockquote en el reproductor -->
+    <script async src="https://www.tiktok.com/embed.js"></script>
+
+    <!-- Método 2: fallback con iframe (algunas veces TikTok requiere el ID de video; si el iframe no carga, usa el bloque anterior o el enlace) -->
+    <div class="fallback">
+      <p>Si no se muestra el reproductor arriba, prueba el iframe o el enlace directo:</p>
+
+      <!-- Intento de iframe (nota: puede requerir el ID real del video o bloquearse por CORS/políticas de TikTok) -->
+      <iframe class="tiktok-iframe"
+              src="https://www.tiktok.com/embed/v2/https://vt.tiktok.com/ZSfo8kkHg/"
+              allow="autoplay; encrypted-media"
+              sandbox="allow-scripts allow-same-origin allow-popups"
+              loading="lazy"
+              title="TikTok video embed">
+      </iframe>
+
+      <p>O abre el video directamente: <a href="https://vt.tiktok.com/ZSfo8kkHg/" target="_blank" rel="noopener">https://vt.tiktok.com/ZSfo8kkHg/</a></p>
+    </div>
+  </div>
+</body>
+</html>
